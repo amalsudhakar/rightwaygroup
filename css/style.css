@@ -1256,3 +1256,34 @@ p.subtitle {
 	  width: 20%;
 	}
   }
+
+ /* style for modal  */
+ .modal-body .row-modal {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 10px), 1fr));
+    gap: 10px;
+    
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    margin-left: -10px; /* Add negative margin to counteract the first column's margin */
+  }
+
+  .modal-body .col {
+    scroll-snap-align: start; /* Add this line to prevent extra column */
+    padding: 0;
+  }
+
+  .modal-body .img-fluid {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .modal-content {
+    overflow: hidden;
+  }
+
+
+  .btn-outline-primary:hover {
+	background-color: #fac145; /* Change to your desired hover background color */
+	color: #fff; /* Change to your desired hover text color */
+}
