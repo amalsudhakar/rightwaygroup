@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Right Way Group</title>
-    <meta name="description" content="Unika - Responsive One Page HTML5 Template">
-    <meta name="keywords" content="HTML5, Bootsrtrap, One Page, Responsive, Template, Portfolio" />
-    <meta name="author" content="imransdesign.com">
+    <meta name="description" content="Rightwaygroup">
+    <meta name="keywords" content="Rightwaygroup, Right way group, Travel partner, Best travel partner, travel, transport, india, chennai, bangalore, rightway solutions" />
+    <meta name="author" content="desgined by amalsudhakar">
 
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,20 +36,16 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script src="js/scripts.js" defer></script>
 
-    <style>
-        .list-group-item:hover {
-            background-color: #e9e9e9;
-        }
+    <script src="js/index.js"></script>
 
-        .custom-list-item {
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 10px;
-            margin-bottom: 5px;
-            align-items: center;
-            text-align: center;
-        }
-    </style>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("IpwJ51TGgCoW0W-Od");
+        })();
+    </script>
 </head>
 
 <body data-spy="scroll" data-target="#main-navbar">
@@ -99,7 +95,9 @@
                 <div class="caption text-center text-white" data-stellar-ratio="0.7">
                     <div id="owl-intro-text" class="owl-carousel">
                         <div class="item">
-                            <h1><span style="color:  #fac145;">R</span>ightway Group</h1>
+                            <h1><span style="color:  #fac145;">R</span>ight<span style="color:  #fac145;">w</span>ay
+                                <span style="color:  #fac145;">G</span>roup
+                            </h1>
                             <p>A Global Travel Solution</p>
                             <div class="extra-space-l"></div>
                             <a class="btn btn-blank" href="#contact-section" role="button">Hire Us!</a>
@@ -444,13 +442,11 @@
 
             <div class="container">
                 <ul class="social-list">
-                    <li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.3s"><span
+                    <li> <a href="https://www.facebook.com/rightwaygroup.in" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.3s"><span
                                 class="rotate-box-icon"><i class="fa fa-facebook"></i></span></a></li>
-                    <li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.4s"><span
-                                class="rotate-box-icon"><i class="fa fa-twitter"></i></span></a></li>
-                    <li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.5s"><span
-                                class="rotate-box-icon"><i class="fa fa-linkedin"></i></span></a></li>
-                    <li> <a href="#" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.5s"><span
+                    <li> <a href="https://www.instagram.com/rightwaygroup.in" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.5s"><span
+                                class="rotate-box-icon"><i class="fa fa-instagram"></i></span></a></li>
+                    <li> <a href="https://wa.me/+919895149514" class="rotate-box-1 square-icon text-center wow zoomIn" data-wow-delay="0.5s"><span
                                 class="rotate-box-icon"><i class="fa fa-whatsapp"></i></span></a></li>
                 </ul>
             </div>
@@ -499,21 +495,20 @@
                         <div class="col-sm-6">
                             <div class="contact-form">
                                 <h4 style="color: white;">Write to us</h4>
-                                <form role="form">
                                     <div class="form-group">
                                         <input type="text" class="form-control input-lg" placeholder="Your Name"
-                                            required>
+                                             id="name" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control input-lg" placeholder="E-mail" required>
+                                        <input type="email" class="form-control input-lg" placeholder="E-mail" required
+                                            id="email">
                                     </div>
                                     <div class="form-group">
-                                        <textarea class="form-control input-lg" rows="5" placeholder="Message"
-                                            required></textarea>
+                                        <textarea class="form-control input-lg" rows="5" placeholder="Message" required
+                                            id="message"></textarea>
                                     </div>
-                                    <button type="submit" class="btn wow bounceInRight" data-wow-delay="0.8s"
+                                    <button class="btn wow bounceInRight" onclick="sendMail()" data-wow-delay="0.8s"
                                         style="color:  #fac145;;">Send</button>
-                                </form>
                             </div>
                         </div>
                     </div> <!-- /.row -->
@@ -527,7 +522,7 @@
         <footer class="text-off-white">
             <div class="footer">
                 <div class="container text-center wow fadeIn" data-wow-delay="0.4s">
-                    <p class="copyright">Copyright &copy; rightwaygroup <a href="" class="theme-author"></a><a href=""
+                    <p class="copyright">Copyright &copy;<a href="https://www.rightwaygroup.in" class="theme-author"> rightwaygroup </a>| All rights reserved<a href=""
                             class="theme-author"></a></p>
                 </div>
             </div>
@@ -576,10 +571,10 @@
                 </div>
                 <div class="modal-body">
                     <ul class="list-group">
-                        <li class="list-group-item custom-list-item">Employee Transfer</li>
+                        <li class="list-group-item custom-list-item">Employer Transfer</li>
                         <li class="list-group-item custom-list-item">Driver Management</li>
                         <li class="list-group-item custom-list-item">Managing Coorporate Events</li>
-                        <li class="list-group-item custom-list-item">Manage Marriage Events</li>
+                        <li class="list-group-item custom-list-item">Managing Marriage Events</li>
                     </ul>
                 </div>
             </div>
@@ -601,7 +596,7 @@
                 <div class="modal-body">
                     <ul class="list-group">
                         <li class="list-group-item custom-list-item">Made to order vacations</li>
-                        <li class="list-group-item custom-list-item">Customized Travek Packages</li>
+                        <li class="list-group-item custom-list-item">Customized Travel Packages</li>
                         <li class="list-group-item custom-list-item">Group Travel Packages</li>
                         <li class="list-group-item custom-list-item">International Tour Packages</li>
                     </ul>
